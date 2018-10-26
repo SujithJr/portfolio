@@ -20,3 +20,20 @@ defaults:
     layout: "default"
 
 permalink: /:title
+plugins:
+    - jekyll-mentions
+    - jemoji
+    - jekyll-redirect-from
+    - jekyll-sitemap
+    - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-avatar
+    - jekyll-coffeescript
+    - jekyll-gist
+    - jekyll-github-metadata
+    - jekyll-paginate
+    - jekyll-relative-links
+    - jekyll-optional-front-matter
+    - jekyll-readme-index
+    - jekyll-default-layout
+    - jekyll-titles-from-headings
