@@ -23,7 +23,7 @@ p, li, a, h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0 4rem;
     a {
         display: inline-block;
         padding: 1rem 2rem;
@@ -36,6 +36,8 @@ p, li, a, h1, h2, h3, h4, h5, h6 {
     .c-log {
         font-size: 2rem;
         font-weight: 700;
+        margin: 0;
+        padding: 0;
     }
 }
 .c-navbar-links ul {
@@ -43,7 +45,7 @@ p, li, a, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 .c-navbar-links ul li {
-    padding: 14px 0;
+    padding: 10px 0;
 }
 .c-navbar-links ul li a {
     font-size: 1rem;
@@ -263,6 +265,7 @@ footer {
     }
     .c-navbar {
         justify-content: space-between;
+        padding: 0.25rem 2rem;
     }
     .c-navbar-ul li {
         border-bottom: 2px solid #29cbce;
@@ -334,7 +337,7 @@ footer {
     }
     .c-navbar {
         justify-content: space-between;
-        padding: 0;
+        padding: 0.25rem 2rem;
     }
     .c-navbar-ul li {
         border-bottom: 2px solid #29cbce;
