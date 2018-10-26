@@ -37,6 +37,16 @@ p, li, a, h1, h2, h3, h4, h5, h6 {
         font-weight: 700;
     }
 }
+.c-navbar-links ul {
+    padding: 0;
+    margin: 0;
+}
+.c-navbar-links ul li {
+    padding: 14px 0;
+}
+.c-navbar-links ul li a {
+    font-size: 1rem;
+}
 .c-navbar-links a:hover {
     transition: 0.3s all;
     color: #29cbce;
@@ -93,7 +103,7 @@ p, li, a, h1, h2, h3, h4, h5, h6 {
         border-radius: 15px;
     }
     .c-main-a:hover img {
-        transform: scale(1.2);
+        // transform: scale(1);
         transition: 0.3s all;
     }
 }
@@ -194,4 +204,165 @@ strong {
 .c-blog-h5 {
     color: #ccc;
     margin: 0;
+}
+
+@media (min-width: 758px) and (max-width: 991px) {
+    .c-main .c-main-ul li {
+        max-width: 50%;
+        padding: 1rem 2rem;
+    }
+    .c-main .c-main-ul li a p {
+        padding: 0;
+    }
+    .c-image {
+        background: none;
+    }
+    .c-image {
+        // width: 150px;
+        min-width: auto;
+        max-width: none;
+        background: none;
+        // max-height: 220px;
+        padding: 0;
+    }
+    .c-main .c-main-a:hover img {
+        transform: none;
+    }
+    .c-main .c-main-a p {
+        margin: 0;
+    }
+    .c-main .c-main-a:hover {
+        background: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 757px) {
+    #mobile-menu-toggler {
+        height: 100% !important;
+    }
+    .c-navbar-ul {
+        position: absolute;
+        top: 60px;
+        background: #142033;
+        width: 50%;
+        right: 0;
+        text-align: center;
+        border-radius: 0 0 0 10px;
+    }
+    .c-navbar {
+        justify-content: space-between;
+    }
+    .c-navbar ul li a {
+        display: block;
+        transition: 0.3s ease;
+    }
+    .c-navbar ul li a:hover {
+        transition: 0.3s ease;
+        background: #29cbce;
+        color: #fff;
+    }
+    .mobile-menu-text {
+        display: none;
+    }
+    .c-main .c-main-ul {
+        display: block;
+    }
+    // .c-main .c-main-h2 {
+    //     margin: 0.8rem 0;
+    // }
+    .c-main .c-main-ul li {
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        border: 1px solid #142033;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+    .c-main .c-main-ul li a p {
+        padding: 0;
+    }
+    .c-image {
+        width: 150px;
+        background: none;
+        max-height: 220px;
+        padding: 0;
+    }
+    .c-main .c-main-a:hover img {
+        transform: none;
+    }
+    .c-main .c-main-a p {
+        margin: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    #mobile-menu-toggler {
+        height: 100% !important;
+    }
+    .c-navbar-ul {
+        position: absolute;
+        top: 60px;
+        background: #142033;
+        width: 50%;
+        right: 0;
+        text-align: center;
+        border-radius: 0 0 0 10px;
+    }
+    .c-navbar {
+        justify-content: space-between;
+    }
+    .c-navbar-ul li {
+        border-bottom: 2px solid #29cbce;
+        border-radius: 0 0 0 10px;
+    }
+    .c-navbar-ul li a {
+        display: block;
+        transition: 0.3s ease;
+        border-radius: 0 0 0 10px;
+    }
+    .c-navbar-ul li a:hover {
+        transition: 0.3s ease;
+        background: #29cbce;
+        color: #fff;
+        border-radius: 0 0 0 10px;
+    }
+    #mobile-menu-toggler:hover {
+        background: #f0f0f0;
+    }
+    .mobile-menu-text {
+        display: none;
+    }
+    .c-main .c-main-ul {
+        display: block;
+    }
+    // .c-main .c-main-h2 {
+    //     margin: 0.8rem 0;
+    // }
+    .c-main .c-main-ul li {
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        border: 1px solid #142033;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+    .c-main .c-main-ul li a p {
+        padding: 0;
+    }
+    .c-image {
+        width: 150px;
+        background: none;
+        max-height: 220px;
+        padding: 0;
+    }
+    .c-main .c-main-a:hover img {
+        transform: none;
+    }
+    .c-main .c-main-a p {
+        margin: 0;
+    }
+    .c-blog h2 a {
+        color: #29cbce;
+        border-bottom: 1px solid #29cbce;
+    }
 }

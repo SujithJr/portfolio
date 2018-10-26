@@ -2,12 +2,16 @@
     <div class="c-navbar-log">
         <a href="#/" class="c-log"><span style="color: #29cbce;">port</span>folio</a>
     </div>
-    <div class="c-navbar-links">
+    <div class="c-navbar-links" id="mobile-menu">
         {% assign current = page.url | split: '/' %}
-        {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" {% if current[1] == item.link %}class="current"{% endif %}>
-            {{ item.name }}
-        </a>
-        {% endfor %}
+        <ul class="c-navbar-ul">
+            {% for item in site.data.navigation %}
+                <li {% if current[1] == item.link %}class="current"{% endif %}>
+                    <a href="{{ item.link }}">
+                {{ item.name }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
     </div>
 </nav>
