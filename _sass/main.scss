@@ -210,6 +210,13 @@ strong {
     color: #ccc;
     margin: 0;
 }
+footer {
+    text-align: center;
+    p {
+        margin-bottom: 1rem 0 0.8rem 0;
+        font-size: 0.8rem;
+    }
+}
 
 @media (min-width: 758px) and (max-width: 991px) {
     .c-main .c-main-ul li {
