@@ -1,0 +1,13 @@
+<nav class="c-navbar">
+    <div class="c-navbar-log">
+        <a href="#/" class="c-log"><span style="color: #29cbce;">port</span>folio</a>
+    </div>
+    <div class="c-navbar-links">
+        {% assign current = page.url | split: '/' %}
+        {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" {% if current[1] == item.link %}class="current"{% endif %}>
+            {{ item.name }}
+        </a>
+        {% endfor %}
+    </div>
+</nav>

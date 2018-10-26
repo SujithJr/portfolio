@@ -1,0 +1,22 @@
+collections:
+  authors:
+    output: true
+
+defaults:
+  -scope:
+    path: "assets/images"
+    type: "authors"
+  values:
+    layout: "tech"
+    image: true
+  -scope:
+    path: ""
+    type: "posts"
+  values:
+    layout: "post"
+  -scope:
+    path: ""
+  values:
+    layout: "default"
+
+permalink: /:title
